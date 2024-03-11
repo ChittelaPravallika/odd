@@ -1,0 +1,20 @@
+def print_odd_numbers(start, end):
+    """
+    Prints odd numbers within the specified range.
+
+    Parameters:
+    start (int): Start of the range.
+    end (int): End of the range.
+
+    Returns:
+    None
+    """
+    print("Odd numbers between", start, "and", end, "are:")
+    for num in range(start, end + 1):
+        if num % 2 != 0:
+            print(num)
+
+# Example usage:
+start = int(input("Enter the start of the range: "))
+end = int(input("Enter the end of the range: "))
+print_odd_numbers(start, end)
